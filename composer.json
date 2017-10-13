@@ -1,0 +1,24 @@
+{
+	"name": "xaositects/mdb2_driver_pgsql",
+	"description": "This is the PostgreSQL MDB2 driver.",
+	"type": "library",
+	"keywords": [ "database", "mdb2", "pear", "pgsql" ],
+	"homepage": "https://github.com/xaositects/MDB2_Driver_pgsql",
+	"license": "BSD-2-Clause",
+	"authors": [
+		{
+			"name": "Tom Miller",
+			"email": "tom@thomasmiller.org"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0",
+		"silverorange/mdb2": "*"
+	},
+	"autoload": {
+		"classmap": [ "MDB2/Driver/pgsql.php" ]
+	},
+	"include-path": [
+		"./"
+	]
+}
