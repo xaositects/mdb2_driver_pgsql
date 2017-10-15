@@ -356,12 +356,13 @@ class MDB2_Driver_pgsql extends MDB2_Driver_Common
      *                  READ COMMITTED (prevents dirty reads)
      *                  REPEATABLE READ (prevents nonrepeatable reads)
      *                  SERIALIZABLE (prevents phantom reads)
+     * @param array $options
      * @return  mixed   MDB2_OK on success, a MDB2 error on failure
      *
      * @access  public
      * @since   2.1.1
      */
-    function setTransactionIsolation($isolation)
+    function setTransactionIsolation($isolation, $options = [])
     {
         $this->debug('Setting transaction isolation level', __FUNCTION__, array('is_manip' => true));
         switch ($isolation) {
